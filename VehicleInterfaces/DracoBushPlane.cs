@@ -4,17 +4,17 @@ using System.Text;
 
 namespace VehicleInterfaces
 {
-    class Cessna : IVehicle
+    class DracoBushPlane : IVehicle
     {
         public int Wheels { get; set; } = 3;
         public int Doors { get; set; } = 3;
         public int PassengerCapacity { get; set; } = 4;
         public bool Winged { get; set; } = true;
         public string TransmissionType { get; set; } = "None";
-        public double EngineVolume { get; set; } = 5915.73;
+        public double EngineVolume { get; set; } = 9999.9;
         public double MaxWaterSpeed { get; set; } = 0;
         public double MaxLandSpeed { get; set; } = 0;
-        public double MaxAirSpeed { get; set; } = 188;
+        public double MaxAirSpeed { get; set; } = 250;
 
         public void Drive()
         {
@@ -23,7 +23,7 @@ namespace VehicleInterfaces
 
         public void Fly()
         {
-            Console.WriteLine("A Cessna cost $8700 when it was first released, in 1956.");
+            Console.WriteLine("I have a plane that can go to 28,000 feet and do 180mph cross-country with four people and gear. To me, that makes it the ultimate bush plane.");
         }
 
         public void Start()

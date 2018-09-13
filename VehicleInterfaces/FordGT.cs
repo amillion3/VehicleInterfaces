@@ -4,16 +4,16 @@ using System.Text;
 
 namespace VehicleInterfaces
 {
-    class Motorcycle : IVehicle
+    class FordGT : IVehicle
     {
-        public int Wheels { get; set; } = 2;
-        public int Doors { get; set; } = 0;
+        public int Wheels { get; set; } = 4;
+        public int Doors { get; set; } = 2;
         public int PassengerCapacity { get; set; } = 2;
         public bool Winged { get; set; }
-        public string TransmissionType { get; set; } = "6 speed sequential gear box";
-        public double EngineVolume { get; set; } = 749;
+        public string TransmissionType { get; set; } = "6 speed manual";
+        public double EngineVolume { get; set; } = 5409.6;
         public double MaxWaterSpeed { get; set; } = 0;
-        public double MaxLandSpeed { get; set; } = 160;
+        public double MaxLandSpeed { get; set; } = 205;
         public double MaxAirSpeed { get; set; } = 0;
 
         public void Drive()
