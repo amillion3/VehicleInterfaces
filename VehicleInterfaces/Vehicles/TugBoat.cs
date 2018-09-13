@@ -2,23 +2,23 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace VehicleInterfaces
+namespace Vehicles
 {
-    class FordGT : IVehicle
+    class TugBoat : IVehicle
     {
-        public int Wheels { get; set; } = 4;
-        public int Doors { get; set; } = 2;
-        public int PassengerCapacity { get; set; } = 2;
+        public int Wheels { get; set; }
+        public int Doors { get; set; }
+        public int PassengerCapacity { get; set; } = 12;
         public bool Winged { get; set; }
-        public string TransmissionType { get; set; } = "6 speed manual";
-        public double EngineVolume { get; set; } = 5409.6;
-        public double MaxWaterSpeed { get; set; } = 0;
-        public double MaxLandSpeed { get; set; } = 205;
+        public string TransmissionType { get; set; } = "Standard";
+        public double EngineVolume { get; set; } = 279235.57;
+        public double MaxWaterSpeed { get; set; } = 15;
+        public double MaxLandSpeed { get; set; } = 0;
         public double MaxAirSpeed { get; set; } = 0;
 
         public void Drive()
         {
-            Console.WriteLine("A Ducati.");
+            Console.WriteLine("Tugboats rule!");
         }
 
         public void Fly()

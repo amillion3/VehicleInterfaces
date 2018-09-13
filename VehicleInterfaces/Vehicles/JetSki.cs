@@ -2,23 +2,23 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace VehicleInterfaces
+namespace Vehicles
 {
-    class Motorcycle : IVehicle
+    class JetSki : IVehicle
     {
-        public int Wheels { get; set; } = 2;
-        public int Doors { get; set; } = 0;
+        public int Wheels { get; set; }
+        public int Doors { get; set; }
         public int PassengerCapacity { get; set; } = 2;
         public bool Winged { get; set; }
-        public string TransmissionType { get; set; } = "6 speed sequential gear box";
-        public double EngineVolume { get; set; } = 749;
-        public double MaxWaterSpeed { get; set; } = 0;
-        public double MaxLandSpeed { get; set; } = 160;
+        public string TransmissionType { get; set; } = "Standard";
+        public double EngineVolume { get; set; } = 1498;
+        public double MaxWaterSpeed { get; set; } = 65;
+        public double MaxLandSpeed { get; set; } = 0;
         public double MaxAirSpeed { get; set; } = 0;
 
         public void Drive()
         {
-            Console.WriteLine("A Ducati.");
+            Console.WriteLine("My friend once ran his Jetski into mine. His dad was pissed!");
         }
 
         public void Fly()

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
+using Vehicles;
 
 namespace VehicleInterfaces
 {
@@ -8,18 +9,42 @@ namespace VehicleInterfaces
     {
         public static void Main()
         {
-            // Build a collection of all vehicles that fly
-            // With a single `foreach`, have each vehicle Fly()
+            // Air travel
+            List<IVehicle> AeroPlanes = new List<IVehicle>
+            {
+                new Cessna(),
+                new DracoBushPlane()
+            };
+            foreach (IVehicle a in AeroPlanes)
+            {
+                a.Fly();
+            }
+            Console.WriteLine("");
 
+            // Land travel
+            List<IVehicle> MotorVehicles = new List<IVehicle>
+            {
+                new FordGT(),
+                new Motorcycle()
+            };
+            foreach (IVehicle m in MotorVehicles)
+            {
+                m.Drive();
+            }
+            Console.WriteLine("");
 
+            // Water travel
+            List<IVehicle> WaterVehicles = new List<IVehicle>
+            {
+                new JetSki(),
+                new TugBoat()
+            };
+            foreach (IVehicle w in WaterVehicles)
+            {
+                w.Drive();
+            }
 
-            // Build a collection of all vehicles that operate on roads
-            // With a single `foreach`, have each road vehicle Drive()
-
-
-
-            // Build a collection of all vehicles that operate on water
-            // With a single `foreach`, have each water vehicle Drive()
+            Console.ReadLine();
         }
     }
 }
